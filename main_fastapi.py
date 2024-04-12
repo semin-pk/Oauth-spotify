@@ -5,13 +5,12 @@ import requests
 from datetime import datetime, timedelta
 from fastapi.responses import RedirectResponse
 from fastapi.responses import JSONResponse
-
 from starlette.middleware.sessions import SessionMiddleware
 
 app = FastAPI()
 app.add_middleware(SessionMiddleware, secret_key="your_secret_key")
-CLIENT_ID = "c7feaea8c49046a9b8ecaa0706dd3759"
-CLIENT_SECRET = "b85803bd5a0148d3a9098a64e9c10474"
+CLIENT_ID = "18cdef91f9364a598c79c8ef4c462ec6"
+CLIENT_SECRET = "ebc03782bb704874938494926ed0fc05"
 REDIRECT_URI = 'http://localhost:8000/callback'
 
 AUTH_URL = 'https://accounts.spotify.com/authorize'
